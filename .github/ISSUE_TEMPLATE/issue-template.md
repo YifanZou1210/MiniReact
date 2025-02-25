@@ -1,5 +1,13 @@
+---
+name: Issue/Backlog Template
+about: Report a bug or add new feature backlog in the project
+title: ''
+labels: backlog, bug 
+assignees: ''
+---
 
-# Issue Title: [Short description of the issue or feature]
+
+## Issue Title: [Short description of the issue or feature]
 
 ---
 
