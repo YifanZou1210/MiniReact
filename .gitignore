@@ -25,3 +25,6 @@ coverage/
 *.bak
 *.swp
 .DS_Store
+.github 
+
+
