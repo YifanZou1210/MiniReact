@@ -1,29 +1,15 @@
-import React, { useState } from 'react'
-import AvatarShow from './AvatarShow'
+// components/App.js
+import React from "react"
+import AvatarShow from './components/AvatarShow'
+import useFetchAvatar from "./hooks/useFetchAvatar"
 
 function App () {
-  const [avatars, setAvatars] = useState([])
-
-  const getRandomAvatar = (params) => {
-    const avatar = ['bird', 'dog']
-    return avatar[Math.floor(Math.random() * avatar.length)]
-  }
-
-  const renderAvatar = avatars.map((avatar, index) => {
-    return <AvatarShow type={avatar} key={index} />
-  })
-
-  const handleClick = () => {
-    setAvatars([...avatars, getRandomAvatar()])
-  }
-
+  const { avatar, getAvatar } = useFetchAvatar()
+  console.log('app includes', avatar)
   return (
     <div>
-      {/* if handleClick(), it will invoke immediatedly when call */}
-      <button onClick={handleClick}>Pick Avatar</button>
-      <div>{avatars.map((avatar, index) => {
-        return <AvatarShow type={avatar} key={index} />
-      })}</div>
+      <button onClick={getAvatar}>Pick Random Avatar</button>
+      <AvatarShow src={avatar} />
     </div>
   )
 }
