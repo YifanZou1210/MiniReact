@@ -9,7 +9,9 @@ function App () {
   return (
     <div>
       <button onClick={getAvatar}>Pick Random Avatar</button>
-      <AvatarShow src={avatar} />
+      <div>
+        <AvatarShow src={avatar} />
+      </div>
     </div>
   )
 }
