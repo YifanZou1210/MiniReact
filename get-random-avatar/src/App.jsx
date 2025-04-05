@@ -1,8 +1,13 @@
 import React from "react"
 import AvatarShow from './components/AvatarShow'
 import useFetchAvatar from "./hooks/useFetchAvatar"
-
+/*
+  App.jsx 作为应用的根组件，主要任务是展示头像和提供触发随机头像获取的按钮。
+  1. 引入 AvatarShow 用于图片展示。
+  2. 引入自定义 Hook useFetchAvatar 管理数据获取逻辑。
+*/
 function App () {
+  // 从自定义 Hook 中获取当前头像和获取头像的函数
   const { avatar, getAvatar } = useFetchAvatar()
   console.log('app includes', avatar)
 
