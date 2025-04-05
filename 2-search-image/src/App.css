@@ -1,3 +1,17 @@
+/* 这里是配合 App.tsx 的样式文件，默认使用的是普通 CSS。也可以替换为：
+* 1. CSS Modules
+* 2. SASS/SCSS
+* 3. LESS
+* 4. PostCSS
+* 5. Tailwind CSS
+* 6. Styled Components
+* 7. Emotion
+*
+* 具体的使用方式可以参考： https://vitejs.dev/guide/features.html#css
+*
+* 注意：如果使用了 CSS Modules，文件名需要改为 App.module.css。
+*/
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
