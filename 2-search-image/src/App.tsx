@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   return (
     <div>
-      <h1>Okay So i will start this application with basic architecture</h1>
+      <h1></h1>
     </div>
   )
 }
