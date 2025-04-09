@@ -13,3 +13,5 @@ function App() {
 }
 
 export default App
+//
+// 该文件是 TypeScript 的入口文件，通常用于配置和初始化 React 应用程序。
