@@ -27,7 +27,7 @@ export const Accordion = ({ data }) => {
     setActiveIndices(prevIndices => (
       // filter函数创建了新数组，仅包含满足条件 i不等于index的元素，filter方法遍历prevIndices数组每个元素
       // 对每个元素执行回调函数 i => i!=index如果true则保留，false则移除
-      // 这是一种函数式编程的常见模式，用于不可变地从数组中移除元素，不修改原数组而是创建一个新数组
+      // 这是一种函数式编程的常见模式，用于不可变地从数组中移除元素，不修改原数组而是创建一个新数组,对于这个再好好研究一下
       prevIndices.includes(index) ?
         prevIndices.filter(i => i != index) :
         [...prevIndices, index]))
